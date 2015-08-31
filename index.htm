@@ -5,7 +5,6 @@
 		<meta name="description" content="Pronounceable password generator in Javascript.">
 		<meta name="keywords" content="">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-		<link rel="stylesheet" type="text/css" href="../thvv/tvvstyle.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
 		<style type="text/css">
@@ -47,14 +46,12 @@
 	</head>
 
 	<body onload="generate('text')">
-		<div class="outer">
-			<form method="POST" class="fm" action="#" onsubmit="return generate('text')">
-				<textarea id="text">...</textarea><br />
-				<b>Password Generator</b><br />
-				<input class="int" id="size" type="number" min="7" max="20" value="10" /><small>Length (Between: 7 - 20)</small><br />
-				<input class="int" id="amount" type="number" min="1" max="20" value="6" /><small>Amount (Between: 1 - 20)</small><br />
-				<input class="button" name="gen" type="submit" value="Generate Passwords"> 
-			</form>
-		</div>
+		<form method="POST" class="fm" action="#" onsubmit="return generate('text')">
+			<textarea id="text">...</textarea><br />
+			<b>Password Generator</b><br />
+			<input class="int" id="size" type="number" min="7" max="20" value="10" /><small>Length (Between: 7 - 20)</small><br />
+			<input class="int" id="amount" type="number" min="1" max="20" value="6" /><small>Amount (Between: 1 - 20)</small><br />
+			<input class="button" name="gen" type="submit" value="Generate Passwords"> 
+		</form>
 	</body>
 </html>

@@ -4,11 +4,6 @@ function toTitleCase(str)
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
 
-// Doesn't work, I don't know jQuery yet.
-$(document).ready(function(){ 
-//Start Here 
-});
-
 function generate(idname) 
 {
 	var x = "";
@@ -34,4 +29,3 @@ function generate(idname)
 	
 	return false;
 } // generate
-
